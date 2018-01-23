@@ -32,9 +32,8 @@ var xmlDoc = xml.responseXML;
 var x, i, y, j, programas;
 
 programas = "";
-
+x = xmlDoc.getElementsByTagName("programa")[0];
   for (i = 0; i < x.length; i++) { 
-	  x = xmlDoc.getElementsByTagName("programa")[i];
 	  y = x.childNodes[0].nodevalue;
 	  window.alert(y);
 		programas += "<div class='demo-card demo-card--step1'>" +
