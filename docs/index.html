@@ -30,9 +30,10 @@ function MuestraProgramas(xml) {
   xmlDoc = xml.responseXML;
   canal = "";
   x = xmlDoc.getElementsByTagName("canal")
+	 window.alert(x);
   for (i = 0; i < x.length; i++) { 
 	y = x.length;
-	  window.alert(y);
+	 
 	for (j = 0;j < y.length;j++) {		
 		canal += "<div class='demo-card demo-card--step1'>" +
 				     "<div class='head'>" +
