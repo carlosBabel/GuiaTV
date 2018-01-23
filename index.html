@@ -74,6 +74,22 @@ x = xmlDoc.getElementsByTagName("programa");
 	<div id="contenedor" class="demo-card-wrapper">
 
 	</div>
+	
+	<div>
+	
+	<script>
+	
+	let url = 'http://openweathermap.org/data/2.5/weather?id=2517117&appid=b6907d289e10d714a6e88b30761fae22';
+
+	fetch(url)
+		.then(res => res.json())
+		.then((out) => {
+			console.log('Checkout this JSON! ', out);
+		})
+	.catch(err => { throw err });
+	</script>
+	
+	</div>
 </section>
   
 
