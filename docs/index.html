@@ -32,7 +32,7 @@ function MuestraProgramas(xml) {
   x = xmlDoc.getElementsByTagName('canal');
 	foreach (var programa in x)
 	{
-    		var sourceAttribute = imageElement.Attribute("imagen");
+    		var sourceAttribute = programa.Attribute("imagen");
     		var sourceValue = sourceAttribute.Value;
     		window.alert(sourceValue);
 	}
