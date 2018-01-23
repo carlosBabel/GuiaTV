@@ -30,7 +30,13 @@ function MuestraProgramas(xml) {
   xmlDoc = xml.responseXML;
   canal = "";
   x = xmlDoc.getElementsByTagName('canal');
-	 window.alert(x[0].childNodes[0].getAttribute('imagen'));
+	foreach (var programa in x)
+	{
+    		var sourceAttribute = imageElement.Attribute("imagen");
+    		var sourceValue = sourceAttribute.Value;
+    		window.alert(sourceValue);
+	}
+	 
   for (i = 0; i < x.length; i++) { 
 	y = x.length;
 	 
