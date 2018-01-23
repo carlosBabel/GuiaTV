@@ -5,7 +5,7 @@
 
 <guia>
 <canal mosca="moscas/tve.jpg" nombre="Televisión Española">
-	<programa imagen="thumbnails/desayunosTve.jpg">
+	<programa imagen="thumbnails/desayunos.jpg">
 		<nombre>Los Desayunos de TVE</nombre>
 		<hora>11:00</hora>
 		<duracion>60</duracion> <!--- minutos -->
