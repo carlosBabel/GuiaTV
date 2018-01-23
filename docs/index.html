@@ -26,16 +26,13 @@ function CargaXML() {
 }
 
 function MuestraProgramas(xml) {
-  var x, i, y, j, xmlDoc, canal;
+  var x, i, y, j, xmlDoc, programas;
   xmlDoc = xml.responseXML;
-  canal = "";
+  programas = "";
   x = xmlDoc.getElementsByTagName('programa');
-window.alert(x[0].getAttribute('imagen'));	 
-  for (i = 0; i < x.length; i++) { 
-	y = x.length;
-	 
-	for (j = 0;j < y.length;j++) {		
-		canal += "<div class='demo-card demo-card--step1'>" +
+	
+  for (i = 0; i < x.length; i++) { 	 	
+		programas += "<div class='demo-card demo-card--step1'>" +
 				     "<div class='head'>" +
 				        "<div class='number-box'>" +
 					        "<span>" + y + "</span>" +
@@ -50,10 +47,8 @@ window.alert(x[0].getAttribute('imagen'));
 						"</div>";
 					"</div>";
 				 "</div";
-	}
-    
   }
-  document.getElementById("contenedor").innerHTML = canal;
+  document.getElementById("contenedor").innerHTML = programas;
 }
 
 </script> 
