@@ -40,13 +40,13 @@ x = xmlDoc.getElementsByTagName("programa");
 		programas += "<div class='demo-card demo-card--step1'>" +
 				     "<div class='head'>" +
 				        "<div class='number-box'>" +
-					        "<span>" + hora.childNodes[i].nodeValue + "</span>" +
+					        "<span>" + hora.childNodes.nodeValue + "</span>" +
 				        "</div>" +
-				        "<h2><span class='small'>" + presentador.childNodes[i].nodeValue + "</span>" + nombre.childNodes[i].nodeValue + "</h2>" +
+				        "<h2><span class='small'>" + presentador.childNodes.nodeValue + "</span>" + nombre.childNodes.nodeValue + "</h2>" +
 				        "<div class='imagen'>'<img src='css/" + canal.getAttribute('mosca') + "'></div>" +
 			            "</div>" +
 						"<div class='body'>" +
-							"<p>" + descripcion.childNodes[i].nodeValue + "</p>" +
+							"<p>" + descripcion.childNodes.nodeValue + "</p>" +
 							"<img src='" + x[i].getAttribute('imagen') + "' alt='Graphic'>" +
 						"</div>";
 					"</div>";
