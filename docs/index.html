@@ -30,7 +30,7 @@ function MuestraProgramas(xml) {
   var x, i, y, j, xmlDoc, programas;
   xmlDoc = xml.responseXML;
   programas = "";
-  x = xmlDoc.getElementsByTagName('programa');
+  x = xmlDoc.getElementsByTagName('programa')[0];
 	
   for (i = 0; i < x.length; i++) { 
 	  y = x.childNodes[i];
