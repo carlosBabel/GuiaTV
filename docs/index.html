@@ -27,14 +27,16 @@ function CargaXML() {
 }
 
 function MuestraProgramas(xml) {
-  var x, i, y, j, xmlDoc, programas;
-  xmlDoc = xml.responseXML;
-  programas = "";
-  x = xmlDoc.getElementsByTagName('programa');
-	
+
+var xmlDoc = xml.responseXML;
+var x, i, y, j, programas;
+
+programas = "";
+
   for (i = 0; i < x.length; i++) { 
-	  y = x.childNodes[i];
-	  window.alert(y.getElementsByTagName('hora')[0]);
+	  x = xmlDoc.getElementsByTagName("programa")[i];
+	  y = x.childNodes[0].nodevalue;
+	  window.alert(y);
 		programas += "<div class='demo-card demo-card--step1'>" +
 				     "<div class='head'>" +
 				        "<div class='number-box'>" +
