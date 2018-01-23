@@ -4,15 +4,18 @@
 ]>
 
 <guia>
+<canal mosca="moscas/tve.jpg" nombre="Televisión Española">
 	<programa imagen="thumbnails/desayunos.jpg">
-		<canal mosca="moscas/tve.jpg" nombre="Televisión Española">
 		<nombre>Los Desayunos de TVE</nombre>
-		<hora>10:00</hora>
+		<hora>11:00</hora>
 		<duracion>60</duracion> <!--- minutos -->
 		<presentador>María Casado</presentador>
 		<descripción>El espacio consiste en una tertulia de contenido político entre los periodistas presentes en el plató, 
 		en la cual se comentan los temas políticos, económicos y sociales más relevantes del día. Posteriormente se desarrolla 
 		una entrevista realizada por la presentadora del programa, acompañada de periodistas, a un personaje de relevancia especialmente 
-		política, pero también social, cultural, económica, artística, deportiva o mediática.</descripción>		
+		política, pero también social, cultural, económica, artística, deportiva o mediática.</descripción>
+		
 	</programa>
+</canal>
+
 </guia>
