@@ -25,6 +25,36 @@
 		dirigido por Sergi Schaaff siempre en diferido, todos los días.</descripcion>
 		
 	</programa>
+	<programa imagen="thumbnails/saber.jpg">
+		<canal mosca="moscas/la2.jpg">La 2</canal>
+		<nombre>Saber y Ganar</nombre>
+		<hora>15:50</hora>
+		<duracion>60</duracion> <!--- minutos -->
+		<presentador>Jordi Hurtado</presentador>
+		<descripcion>Saber y ganar es un programa de televisión española de preguntas y respuestas, 
+		dirigido por Sergi Schaaff siempre en diferido, todos los días.</descripcion>
+		
+	</programa>
+	<programa imagen="thumbnails/saber.jpg">
+		<canal mosca="moscas/la2.jpg">La 2</canal>
+		<nombre>Saber y Ganar</nombre>
+		<hora>15:50</hora>
+		<duracion>60</duracion> <!--- minutos -->
+		<presentador>Jordi Hurtado</presentador>
+		<descripcion>Saber y ganar es un programa de televisión española de preguntas y respuestas, 
+		dirigido por Sergi Schaaff siempre en diferido, todos los días.</descripcion>
+		
+	</programa>
+	<programa imagen="thumbnails/saber.jpg">
+		<canal mosca="moscas/la2.jpg">La 2</canal>
+		<nombre>Saber y Ganar</nombre>
+		<hora>15:50</hora>
+		<duracion>60</duracion> <!--- minutos -->
+		<presentador>Jordi Hurtado</presentador>
+		<descripcion>Saber y ganar es un programa de televisión española de preguntas y respuestas, 
+		dirigido por Sergi Schaaff siempre en diferido, todos los días.</descripcion>
+		
+	</programa>
 
 
 </guia>
