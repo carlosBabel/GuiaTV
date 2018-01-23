@@ -4,8 +4,9 @@
 ]>
 
 <guia>
-<canal mosca="moscas/tve.jpg" nombre="Televisión Española">
+
 	<programa imagen="thumbnails/desayunos.jpg">
+		<canal mosca="moscas/tve.jpg">Televisión Española</canal
 		<nombre>Los Desayunos de TVE</nombre>
 		<hora>11:00</hora>
 		<duracion>60</duracion> <!--- minutos -->
@@ -16,6 +17,6 @@
 		política, pero también social, cultural, económica, artística, deportiva o mediática.</descripción>
 		
 	</programa>
-</canal>
+
 
 </guia>
