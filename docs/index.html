@@ -31,12 +31,12 @@ function MuestraProgramas(xml) {
   canal = "";
   x = xmlDoc.getElementsByTagName("canal")
   for (i = 0; i < x.length; i++) { 
-	y = xmlDoc.getElementsByTagName("programa")
+	y = x.getElementsByTagName("programa")
 	for (j = 0;j < y.length;j++) {		
 		canal += "<div class='demo-card demo-card--step1'>" +
 				     "<div class='head'>" +
 				        "<div class='number-box'>" +
-					        "<span>" + y.getElementsByTagName("hora")[0]; + "</span>" +
+					        "<span>" + y[2]; + "</span>" +
 				        "</div>" +
 				        "<h2><span class='small'>María Casado</span> Desayunos</h2>" +
 				        "<div class='imagen'><img src='css/moscas/tve.jpg'></div>" +
