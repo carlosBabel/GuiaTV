@@ -29,8 +29,8 @@ function MuestraProgramas(xml) {
   var x, i, y, j, xmlDoc, canal;
   xmlDoc = xml.responseXML;
   canal = "";
-  x = xmlDoc.getElementsByTagName("canal")
-	 window.alert(x[0]);
+  x = xmlDoc.getElementsByTagName("canal")[0]
+	 window.alert(x.childNodes[0].nodevalue);
   for (i = 0; i < x.length; i++) { 
 	y = x.length;
 	 
