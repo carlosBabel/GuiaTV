@@ -30,8 +30,7 @@ function MuestraProgramas(xml) {
   xmlDoc = xml.responseXML;
   canal = "";
   x = xmlDoc.getElementsByTagName('canal');
-  window.alert(x[0].firstChild.nodeValue);
-	 
+window.alert(x[i].getAttribute('imagen'));	 
   for (i = 0; i < x.length; i++) { 
 	y = x.length;
 	 
