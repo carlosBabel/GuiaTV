@@ -8,11 +8,21 @@
 	<programa imagen="thumbnails/desayunos.jpg">
 		<canal mosca="moscas/tve.jpg">Televisión Española</canal>
 		<nombre>Los Desayunos de TVE</nombre>
-		<hora>11:00</hora>
-		<duracion>60</duracion> <!--- minutos -->
+		<hora>10:00</hora>
+		<duracion>90</duracion> <!--- minutos -->
 		<presentador>María Casado</presentador>
 		<descripcion>El espacio consiste en una tertulia de contenido político entre los periodistas presentes en el plató, 
 		en la cual se comentan los temas políticos, económicos y sociales más relevantes del día.</descripcion>
+		
+	</programa>
+	<programa imagen="thumbnails/saber.jpg">
+		<canal mosca="moscas/la2.jpg">La 2</canal>
+		<nombre>Saber y Ganar</nombre>
+		<hora>15:50</hora>
+		<duracion>60</duracion> <!--- minutos -->
+		<presentador>Jordi Hurtado</presentador>
+		<descripcion>Saber y ganar es un programa de televisión española de preguntas y respuestas, 
+		dirigido por Sergi Schaaff siempre en diferido, todos los días.</descripcion>
 		
 	</programa>
 
