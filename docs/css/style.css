@@ -248,12 +248,11 @@ body {
   border-color: #46b8e9;
 }
 .imagen img{
-    display: block;
+    background-image: url(css/moscas/tve.jpg);
     position: relative;
-    width: 63px;
-    padding: 35px;
     background-size: cover;
-    margin-right: 5px;
+    margin: 5px;
+    padding: 45px;
 }
 
 .nav{
