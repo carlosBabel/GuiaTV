@@ -18,7 +18,6 @@ function CargaXML() {
   var xmlhttp = new XMLHttpRequest();
   xmlhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
-		window.alert("LUL");
       MuestraProgramas(this);
     }
   };
@@ -34,7 +33,8 @@ function MuestraProgramas(xml) {
   for (i = 0; i < x.length; i++) { 
 	y = xmlDoc.getElementsByTagName("programa")
 	for (j = 0;j < y.length;j++) {		
-		canal += "<div class='head'>" +
+		canal += "<div class='demo-card demo-card--step1'>" +
+				"<div class='head'>" +
 				"<div class='number-box'>" +
 					"<span>10:00</span>" +
 				"</div>" +
@@ -45,6 +45,7 @@ function MuestraProgramas(xml) {
 				"<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta reiciendis deserunt doloribus consequatur," + 
 				"laudantium odio dolorum laboriosam.</p>" +
 				"<img src='thumbnails/DesayunosTve.jpg' alt='Graphic'>" +
+			"</div>";
 			"</div>";
 	}
     
