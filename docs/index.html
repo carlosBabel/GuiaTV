@@ -37,19 +37,19 @@ x = xmlDoc.getElementsByTagName("programa");
 	  descripcion = xmlDoc.getElementsByTagName("descripcion")[i];
 	  canal = xmlDoc.getElementsByTagName("canal")[i];
 	  
-		programas += "<div class='demo-card demo-card--step"+ (i+1) +"'>" +
-				     "<div class='head'>" +
+	programas += "<div class='demo-card demo-card--step"+ (i+1) +"'>" +
+				"<div class='head'>" +
 				        "<div class='number-box'>" +
 					        "<span>" + hora.childNodes[0].nodeValue + "</span>" +
 				        "</div>" +
 				        "<h2><span class='small'>" + presentador.childNodes[0].nodeValue + "</span>" + nombre.childNodes[0].nodeValue + "</h2>" +
 				        "<div class='imagen'><img src='css/moscas/tve.jpg'></div>" +
-			            "</div>" +
-						"<div class='body'>" +
-							"<p>" + descripcion.childNodes[0].nodeValue + "</p>" +
-							"<img src='" + x[i].getAttribute('imagen') + "' alt='Graphic'>" +
-						"</div>";
-				 "</div>";
+			        "</div>" +
+				"<div class='body'>" +
+					"<p>" + descripcion.childNodes[0].nodeValue + "</p>" +
+						"<img src='" + x[i].getAttribute('imagen') + "' alt='Graphic'>" +
+				"</div>";
+			"</div>";
   }
   document.getElementById("contenedor").innerHTML = programas;
 }
