@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <link rel="icon" href="lul.png" type="image/x-icon"/>
+  <meta charset="UTF-8">
+  <title>Guía TV</title>
+	
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+  <link rel="stylesheet" href="css/style.css"> 
+</head>
+
+<script type="text/javascript">
+function CargaXML() {
+
+  var xmlhttp = new XMLHttpRequest();
+  xmlhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      MuestraProgramas(this);
+    }
+  };
+  xmlhttp.open("GET", "BBDD.xml" , true);
+  xmlhttp.send();
+}
+
+function MuestraProgramas(xml) {
+
+var xmlDoc = xml.responseXML;
+var x, i, hora, presentador, nombre, descripcion, programas, canal;
+
+programas = "";
+x = xmlDoc.getElementsByTagName("programa");
+  for (i = 0; i < x.length; i++) {
+
+	  hora = xmlDoc.getElementsByTagName("hora")[i];
+	  presentador = xmlDoc.getElementsByTagName("presentador")[i];
+	  nombre = xmlDoc.getElementsByTagName("nombre")[i];
+	  descripcion = xmlDoc.getElementsByTagName("descripcion")[i];
+	  canal = xmlDoc.getElementsByTagName("canal")[i];
+	  
+	programas += "<div class='demo-card demo-card--step"+ (i+1) +"'>" +
+				"<div class='head'>" +
+				        "<div class='number-box'>" +
+					        "<span>" + hora.childNodes[0].nodeValue + "</span>" +
+				        "</div>" +
+				        "<h2><span class='small'>" + presentador.childNodes[0].nodeValue + "</span>" + nombre.childNodes[0].nodeValue + "</h2>" +
+				        "<div class='imagen' style=background-image:url('css/" + canal.getAttribute('mosca') + "')></div>" +
+			        "</div>" +
+				"<div class='body'>" +
+					"<p>" + descripcion.childNodes[0].nodeValue + "</p>" +
+						"<img src='" + x[i].getAttribute('imagen') + "' alt='Graphic'>" +
+				"</div>" +
+			"</div>";
+  }
+  document.getElementById("contenedor").innerHTML = programas;
+}
+
+</script> 
+
+<body onload="CargaXML()">
+
+  <section id=timeline>
+	<h1>¿Qué echan hoy en la tele?</h1>
+	
+	<nav class="nav">
+		<div class="nav-left">
+			<ul>
+				<li><a href="#">TVE</a></li>
+				<li><a href="#">La 2</a></li>
+				<li><a href="#">Antena 3</a></li>
+			</ul>
+		</div>
+	</nav>
+	
+	<div id="contenedor" class="demo-card-wrapper">
+
+	</div>
+</section>
+  
+
+</body>
+</html>
