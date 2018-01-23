@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html >
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <title>Flexbox Timeline Layout</title>
@@ -29,17 +29,11 @@ function CargaXML() {
 function MuestraProgramas(xml) {
   var x, i, y, j, xmlDoc, canal;
   xmlDoc = xml.responseXML;
-  canal = "<tr><th>Artist</th><th>Title</th></tr>";
-  x = xmlDoc.getElementsByTagName("CD")
+  canal = "";
+  x = xmlDoc.getElementsByTagName("canal")
   for (i = 0; i < x.length; i++) { 
-	y = xmlDoc.getElementsByTagName("CD")
-	for (j = 0;j < y.length;j++) {
-		table += "<tr><td>" + 
-		x[i].getElementsByTagName("ARTIST")[0].childNodes[0].nodeValue +
-		"</td><td>" +
-		x[i].getElementsByTagName("TITLE")[0].childNodes[0].nodeValue +
-		"</td></tr>";
-		
+	y = xmlDoc.getElementsByTagName("programa")
+	for (j = 0;j < y.length;j++) {		
 		canal += "<div class='head'>" +
 				"<div class='number-box'>" +
 					"<span>10:00</span>" +
