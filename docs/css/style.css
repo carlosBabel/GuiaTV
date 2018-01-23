@@ -216,7 +216,6 @@ body {
 #timeline .demo-card .body img {
   display: block;
   width: 100%;
-}
 #timeline .demo-card--step1 {
   background-color: #46b8e9;
 }
@@ -247,7 +246,7 @@ body {
 #timeline .demo-card--step5 .head::after {
   border-color: #46b8e9;
 }
-.imagen img{
+.imagen div{
     background-image: url(css/moscas/tve.jpg);
     position: relative;
     background-size: cover;
