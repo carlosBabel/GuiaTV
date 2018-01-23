@@ -7,7 +7,7 @@
 <canal mosca="moscas/tve.jpg" nombre="Televisión Española">
 	<programa imagen="thumbnails/desayunosTve.jpg">
 		<nombre>Los Desayunos de TVE</nombre>
-		<hora>10:00</hora>
+		<hora>11:00</hora>
 		<duracion>60</duracion> <!--- minutos -->
 		<presentador>María Casado</presentador>
 		<descripción>El espacio consiste en una tertulia de contenido político entre los periodistas presentes en el plató, 
