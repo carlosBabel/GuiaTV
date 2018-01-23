@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE guia [
+	<!ELEMENT programa (#PCDATA)>
+]>
+
+<guia>
+
+	<programa imagen="thumbnails/desayunos.jpg">
+		<canal mosca="moscas/tve.jpg">Televisión Española</canal>
+		<nombre>Los Desayunos de TVE</nombre>
+		<hora>10:00</hora>
+		<duracion>90</duracion> <!--- minutos -->
+		<presentador>María Casado</presentador>
+		<descripcion>El espacio consiste en una tertulia de contenido político entre los periodistas presentes en el plató, 
+		en la cual se comentan los temas políticos, económicos y sociales más relevantes del día.</descripcion>
+		
+	</programa>
+	<programa imagen="thumbnails/saber.jpg">
+		<canal mosca="moscas/la2.jpg">La 2</canal>
+		<nombre>Saber y Ganar</nombre>
+		<hora>15:50</hora>
+		<duracion>60</duracion> <!--- minutos -->
+		<presentador>Jordi Hurtado</presentador>
+		<descripcion>Saber y ganar es un programa de televisión española de preguntas y respuestas, 
+		dirigido por Sergi Schaaff siempre en diferido, todos los días.</descripcion>
+		
+	</programa>
+	<programa imagen="thumbnails/pesadilla.jpg">
+		<canal mosca="moscas/a3.jpg">La 2</canal>
+		<nombre>Pesadilla en la cocina</nombre>
+		<hora>22:30</hora>
+		<duracion>60</duracion> <!--- minutos -->
+		<presentador>Alberto Chicote</presentador>
+		<descripcion> Este espacio es una adaptación del programa homónimo angloparlante, "Kitchen Nightmares", 
+		presentado por el británico Gordon Ramsay</descripcion>
+		
+	</programa>
+	<programa imagen="thumbnails/saber.jpg">
+		<canal mosca="moscas/la2.jpg">La 2</canal>
+		<nombre>Saber y Ganar</nombre>
+		<hora>15:50</hora>
+		<duracion>60</duracion> <!--- minutos -->
+		<presentador>Jordi Hurtado</presentador>
+		<descripcion>Saber y ganar es un programa de televisión española de preguntas y respuestas, 
+		dirigido por Sergi Schaaff siempre en diferido, todos los días.</descripcion>
+		
+	</programa>
+	<programa imagen="thumbnails/saber.jpg">
+		<canal mosca="moscas/la2.jpg">La 2</canal>
+		<nombre>Saber y Ganar</nombre>
+		<hora>15:50</hora>
+		<duracion>60</duracion> <!--- minutos -->
+		<presentador>Jordi Hurtado</presentador>
+		<descripcion>Saber y ganar es un programa de televisión española de preguntas y respuestas, 
+		dirigido por Sergi Schaaff siempre en diferido, todos los días.</descripcion>
+		
+	</programa>
+
+
+</guia>
