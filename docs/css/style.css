@@ -1,47 +1,3 @@
-Skip to content
-
-
-This repository
- 
-Pull requests 
-Issues 
-Marketplace 
-Explore 
- 
-
-
-Sign out 
-
-
- Unwatch 
-1 
- Star 
-0 
- Fork 
-0 
-
-carlosBabel/WebPage 
- Code 
- Issues 0 
- Pull requests 0 
- Projects 0 
- Wiki 
- Insights 
- Settings 
-Tree: d4de0f2ec2 
-Find file 
-Copy path
-WebPage/docs/css/style.css 
-d4de0f2 3 hours ago 
- carlosBabel Update style.css 
-1 contributor 
- 
-Raw
-Blame
-History
-   
-280 lines (269 sloc) 5.26 KB 
-
 /* Media Queries */
 
 /* Card sizing */
@@ -540,7 +496,7 @@ body {
 
 }
 
-.imagen img{
+.imagen{
 
     display: block;
 
