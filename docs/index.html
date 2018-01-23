@@ -4,13 +4,9 @@
   <link rel="icon" href="lul.png" type="image/x-icon"/>
   <meta charset="UTF-8">
   <title>Flexbox Timeline Layout</title>
-  
+	
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
-
-  
-      <link rel="stylesheet" href="css/style.css">
-
-  
+  <link rel="stylesheet" href="css/style.css"> 
 </head>
 
 <script type="text/javascript">
@@ -32,7 +28,7 @@ var xmlDoc = xml.responseXML;
 var x, i, y, j, programas;
 
 programas = "";
-x = xmlDoc.getElementsByTagName("programa")[0];
+x = xmlDoc.getElementsByTagName("programa");
   for (i = 0; i < x.length; i++) { 
 	  y = x.childNodes[0].nodevalue;
 	  window.alert(y);
