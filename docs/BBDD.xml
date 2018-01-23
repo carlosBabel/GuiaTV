@@ -6,7 +6,7 @@
 <guia>
 
 	<programa imagen="thumbnails/desayunos.jpg">
-		<canal mosca="moscas/tve.jpg">Televisión Española</canal
+		<canal mosca="moscas/tve.jpg">Televisión Española</canal>
 		<nombre>Los Desayunos de TVE</nombre>
 		<hora>11:00</hora>
 		<duracion>60</duracion> <!--- minutos -->
