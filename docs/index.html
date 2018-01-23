@@ -19,12 +19,45 @@ function CargaXML() {
   xmlhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
 		window.alert("LUL");
-      /*MuestraProgramas(this);*/
+      MuestraProgramas(this);
     }
   };
   xmlhttp.open("GET", "BBDD.xml" , true);
   xmlhttp.send();
 }
+
+function MuestraProgramas(xml) {
+  var x, i, y, j, xmlDoc, canal;
+  xmlDoc = xml.responseXML;
+  canal = "<tr><th>Artist</th><th>Title</th></tr>";
+  x = xmlDoc.getElementsByTagName("CD")
+  for (i = 0; i < x.length; i++) { 
+	y = xmlDoc.getElementsByTagName("CD")
+	for (j = 0;j < y.length;j++) {
+		table += "<tr><td>" + 
+		x[i].getElementsByTagName("ARTIST")[0].childNodes[0].nodeValue +
+		"</td><td>" +
+		x[i].getElementsByTagName("TITLE")[0].childNodes[0].nodeValue +
+		"</td></tr>";
+		
+		canal += "<div class='head'>" +
+				"<div class='number-box'>" +
+					"<span>10:00</span>" +
+				"</div>" +
+				"<h2><span class='small'>María Casado</span> Desayunos</h2>" +
+				"<div class='imagen'><img src='css/moscas/tve.jpg'></div>" +
+			"</div>" +
+			"<div class='body'>" +
+				"<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta reiciendis deserunt doloribus consequatur," + 
+				"laudantium odio dolorum laboriosam.</p>" +
+				"<img src='thumbnails/DesayunosTve.jpg' alt='Graphic'>" +
+			"</div>";
+	}
+    
+  }
+  document.getElementById("contenedor").innerHTML = canal;
+}
+
 </script> 
 
 <body onload="CargaXML()">
