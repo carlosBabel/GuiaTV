@@ -25,23 +25,27 @@ function CargaXML() {
 function MuestraProgramas(xml) {
 
 var xmlDoc = xml.responseXML;
-var x, i, y, j, programas;
+var x, i, hora, presentador, nombre, descripcion programas;
 
 programas = "";
 x = xmlDoc.getElementsByTagName("programa");
-  for (i = 0; i < x.length; i++) { 
-	  y = xmlDoc.getElementsByTagName("hora")[i];
+  for (i = 0; i < x.length; i++) {
+
+	  hora = xmlDoc.getElementsByTagName("hora")[i];
+	  presentador = xmlDoc.getElementsByTagName("presentador")[i];
+	  nombre = xmlDoc.getElementsByTagName("nombre")[i];
+	  descripcion = xmlDoc.getElementsByTagName("descripcion")[i];
+	  
 		programas += "<div class='demo-card demo-card--step1'>" +
 				     "<div class='head'>" +
 				        "<div class='number-box'>" +
-					        "<span>" + y.childNodes[0].nodeValue + "</span>" +
+					        "<span>" + hora.childNodes[i].nodeValue + "</span>" +
 				        "</div>" +
-				        "<h2><span class='small'>María Casado</span> Desayunos</h2>" +
+				        "<h2><span class='small'>presentador.childNodes[i].nodeValue</span> nombre.childNodes[i].nodeValue</h2>" +
 				        "<div class='imagen'><img src='css/moscas/tve.jpg'></div>" +
 			            "</div>" +
 						"<div class='body'>" +
-							"<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta reiciendis deserunt doloribus consequatur," + 
-							"laudantium odio dolorum laboriosam.</p>" +
+							"<p>" + descripcion.childNodes[i].nodeValue + "</p>" +
 							"<img src='" + x[i].getAttribute('imagen') + "' alt='Graphic'>" +
 						"</div>";
 					"</div>";
