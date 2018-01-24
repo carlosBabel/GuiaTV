@@ -58,13 +58,22 @@ x = xmlDoc.getElementsByTagName("programa");
   document.getElementById("contenedor").innerHTML = programas;
 }
 
+	let url = 'https://api.openweathermap.org/data/2.5/weather?id=2517117&units=metric&lang=es&appid=d23c3c8780e423a15dcd35d29d725f5d';
+
+	fetch(url)
+		.then(res => res.json())
+		.then((out) => {
+			document.getElementById("temperatura").innerHTML = out.main.temp + "º";
+		})
+	.catch(err => { throw err });
+
 </script> 
 
 <body onload="CargaXML()">
 
   <section id=timeline>
 	
-	<nav class="navbar navbar-inverse">
+<nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <div class="navbar-header">
       <a class="navbar-brand" href="#"><i class="icomoon icon-tv"></i> ¿Qué echan hoy en la tele?</a>
@@ -80,9 +89,10 @@ x = xmlDoc.getElementsByTagName("programa");
       </li>
       <li><a href="#">Page 2</a></li>
     </ul>
-    <ul class="nav navbar-nav navbar-right">
-      <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-      <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+    <ul class="nav navbar-nav navbar-right"> 
+	  <li><a href="#"><span class="glyphicon glyphicon-cloud"></span> Granada, <span id="temperatura"></span></a></li>
+      <li><a href="#"><span class="glyphicon glyphicon-user"></span> Registrarse</a></li>
+      <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Iniciar Sesión</a></li>
     </ul>
   </div>
 </nav>
@@ -93,17 +103,7 @@ x = xmlDoc.getElementsByTagName("programa");
 	
 	<div>
 	
-	<script>
-
-	let url = 'https://api.openweathermap.org/data/2.5/weather?id=2517117&units=metric&lang=es&appid=d23c3c8780e423a15dcd35d29d725f5d';
-
-	fetch(url)
-		.then(res => res.json())
-		.then((out) => {
-			console.log('Checkout this JSON! ', out);
-		})
-	.catch(err => { throw err });
-	</script>
+	
 	
 	</div>
 </section>
