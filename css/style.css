@@ -120,13 +120,7 @@ body {
 
 #timeline {
 
-  padding: 100px 0;
-
   background: #f7f7f7;
-
-  border-top: 1px solid rgba(191, 191, 191, 0.4);
-
-  border-bottom: 1px solid rgba(191, 191, 191, 0.4);
 
 }
 
@@ -559,4 +553,7 @@ body {
 
 .icon-tv:before {
     content: "\e95b";
+}
+i.icomoon.icon-tv {
+	font-family: 'IcoMoon-Free';
 }
