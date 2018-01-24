@@ -4,7 +4,7 @@
 <guia>
 	<programa imagen="thumbnails/desayunos.jpg">
 		<canal mosca="moscas/tve.jpg">Televisión Española</canal>
-		<nombre>Los Desayunos de TVE</nombre>
+		<nombre>Desayunos TVE</nombre>
 		<hora>10:00</hora>
 		<duracion>90</duracion><!--- minutos -->
 		<presentador>María Casado</presentador>
