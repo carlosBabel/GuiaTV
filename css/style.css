@@ -385,6 +385,7 @@ body {
   #timeline .demo-card .head h2 span {
 
     font-size: 0.8rem;
+	color: forestgreen;
 
   }
 
@@ -556,4 +557,10 @@ body {
 }
 i.icomoon.icon-tv {
 	font-family: 'IcoMoon-Free';
+}
+i.icomoon.icon-git {
+	font-family: 'IcoMoon-Free';
+}
+.icon-git:before {
+    content: "\eab0";
 }
