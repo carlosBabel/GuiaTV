@@ -1,0 +1,20 @@
+<!-- DTD created at Wed Jan 24 12:28:23 CET 2018 with EditiX XML Editor (http://www.editix.com). Please insert an encoding attribute header for converting any DTD  -->
+
+<!ELEMENT  guia (programa+)>
+
+<!ELEMENT  programa (canal,nombre,hora,duracion,presentador,descripcion)>
+<!ATTLIST programa  imagen CDATA #REQUIRED>
+
+<!ELEMENT  canal (#PCDATA)>
+<!ATTLIST canal  mosca CDATA #REQUIRED>
+
+<!ELEMENT nombre (#PCDATA)>
+
+<!ELEMENT  hora (#PCDATA)>
+
+<!ELEMENT  duracion (#PCDATA)>
+
+<!ELEMENT  presentador (#PCDATA)>
+
+<!ELEMENT  descripcion (#PCDATA)>
+
