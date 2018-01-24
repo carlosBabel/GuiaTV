@@ -556,3 +556,7 @@ body {
     font-weight: normal;
     font-style: normal;
 }
+
+.icon-tv:before {
+    content: "\e95b";
+}
