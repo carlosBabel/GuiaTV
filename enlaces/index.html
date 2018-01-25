@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Enlaces de interés</title>
+	</head>
+	
+	<script>
+		var txtFile = new XMLHttpRequest();
+		txtFile.open("GET", "https://www.dropbox.com/s/abwenqps1bf8s7b/enlaces%20de%20interes.txt", true);
+		txtFile.onreadystatechange = function() {
+			if (txtFile.readyState === 4) {  // Makes sure the document is ready to parse.
+				if (txtFile.status === 200) {  // Makes sure it's found the file.
+					allText = txtFile.responseText; 
+					lines = txtFile.responseText.split("\n"); // Will separate each line into an array
+					alert("HI");
+				}
+			
+		}
+		txtFile.send(null);
+	</script>
+	<body>
+	</body>
+</html>
