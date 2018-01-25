@@ -5,18 +5,17 @@
 	</head>
 	
 	<script>
-		var txtFile = new XMLHttpRequest();
-		txtFile.open("GET", "https://www.dropbox.com/s/abwenqps1bf8s7b/enlaces%20de%20interes.txt", true);
-		txtFile.onreadystatechange = function() {
-			if (txtFile.readyState === 4) {  // Makes sure the document is ready to parse.
-				if (txtFile.status === 200) {  // Makes sure it's found the file.
-					allText = txtFile.responseText; 
-					lines = txtFile.responseText.split("\n"); // Will separate each line into an array
-					alert("HI");
-				}
-			
-		}
-		txtFile.send(null);
+		var dbx = new Dropbox({ accessToken: 3m4ufb5Hz6gAAAAAAAADb3bInf4kq0_pjZo6QG_IPu242UEu-1mqAaudKpUehRJD });
+		
+		dbx.usersGetCurrentAccount()
+		
+		dbx.filesListFolder({path: ''})
+			.then(function(response) {
+			  console.log(response.entries);
+			})
+			.catch(function(error) {
+			  console.error(error);
+			});
 	</script>
 	<body>
 	</body>
