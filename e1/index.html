@@ -14,9 +14,12 @@
 		<link rel="stylesheet" type="text/css" href="styles.css">
 		
 		<!-- BootStrap CDN (Content Delivery Network) -->
-		<!-- Bootstrap CSS -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-		
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+
 		<!-- icono -->
 		<link rel="icon" href="favicon.ico" type="image/x-icon">
 		
@@ -28,56 +31,46 @@
 			
 		
 			<div id="miCarrusel" class="carousel slide" data-ride="carousel">
-			  <!-- Indicadores -->
-			  <ol class="carousel-indicators">
-				<li data-target="#miCarrusel" data-slide-to="0" class="active"></li>
-				<li data-target="#miCarrusel" data-slide-to="1"></li>
-				<li data-target="#miCarrusel" data-slide-to="2"></li>
-			  </ol>
-
-			  <!-- Wrapper para los slides -->
-			  <div class="carousel-inner">
-				<div class="caeousel-item active">
-					<img src="imagenes/aceite.jpg" alt="Aceite de Oliva">
+				<ul class="carousel-indicators">
+					<li data-target="#miCarrusel" data-slide-to="0" class="active"></li>
+					<li data-target="#miCarrusel" data-slide-to="1"></li>
+					<li data-target="#miCarrusel" data-slide-to="2"></li>
+				</ul>
+  
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<img src="imagenes/aceite.jpg" alt="Los Angeles" width="1100" height="500">
+						<div class="carousel-caption">
+							<h3><a class="boton" href="https://dietamediterranea.com/recetas" title="Este enlace le redireccionará a la página principal de dietamediterránea.com" 
+								target="_blank" accesskey="i"><i class="fas fa-utensils"> Dieta Mediterránea</i></a></h3>
+						</div> 
+					</div>
 					
-					<div class="carousel-caption">
-						<h3><a class="boton" href="https://dietamediterranea.com/recetas" title="Este enlace le redireccionará a la página principal de dietamediterránea.com" 
-						target="_blank" accesskey="i"><i class="fas fa-utensils"> Dieta Mediterránea</i></a></h3>
+					<div class="carousel-item">
+						<img src="imagenes/pescado.jpg" alt="Pescados y Mariscos" width="1100" height="500">
+						<div class="carousel-caption">
+							<h3><a class="boton" href="https://dietamediterranea.com/recetas" title="Este enlace le redireccionará a la página principal de dietamediterránea.com" 
+								target="_blank" accesskey="i">Pescados y Mariscos</a></h3>
+						</div>   
+					</div>
+    
+					<div class="carousel-item">
+						<img src="imagenes/verdura.jpg" alt="New York" width="1100" height="500">
+						<div class="carousel-caption">
+							<h3><a class="boton" href="https://dietamediterranea.com/recetas" title="Este enlace le redireccionará a la página principal de dietamediterránea.com" 
+								target="_blank" accesskey="i">Verduras</a></h3>
+						</div>   
 					</div>
 				</div>
-
-				<div class="carousel-item">
-					<img src="imagenes/pescado.jpg" alt="Pescados y Mariscos">
-					
-					<div class="carousel-caption">
-						<h3>Pescados y Mariscos</h3>
-						<p>La cercanía costera hace que el consumo de pescados y mariscos sea amplio.</p>
-					</div>
-				</div>
-
-				<div class="carousel-item">
-					<img src="imagenes/verdura.jpg" alt="Verduras">
-					
-					<div class="carousel-caption">
-						<h3>Verduras</h3>
-						<p>Hay uso intensivo de las legumbres, que aparecen incluso en las ensaladas, pero no se emplean en potajes.</p>
-					</div>
-				</div>
-			  </div>
-
-			  <!-- Controles para ir a izquierda o derecha -->
-			  <a class="carousel-control-prev" href="#miCarrusel" data-slide="prev">
-				<span class="carousel-control-prev-icon"></span>
-	
-			  </a>
-			  <a class="carousel-control-next" href="#miCarrusel" data-slide="next">
-				<span class="carousel-control-next-icon"></span>
-			  </a>
+  
+				<a class="carousel-control-prev" href="#miCarrusel" data-slide="prev">
+					<span class="carousel-control-prev-icon"></span>
+				</a>
+				<a class="carousel-control-next" href="#miCarrusel" data-slide="next">
+					<span class="carousel-control-next-icon"></span>
+				</a>
 			</div>
 		</div>
-	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-  </body>
+
+	</body>
 </html>
