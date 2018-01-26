@@ -41,5 +41,4 @@ var app = angular.module("enlace",['ngRoute'])
 	$http.get('enlaces.json')then(function(response){
 		$scope.enlaces = response.data;
 	}
-}]);
-*/
+}])*/;
