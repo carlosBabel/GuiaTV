@@ -36,9 +36,9 @@ var app = angular.module("enlace",['ngRoute'])
 		$scope.enlaces = response.data;
 	}
 }]);
-
+*/
 .controller('CursosController',['$scope', '$http', function($scope, $http){
 	$http.get('enlaces.json')then(function(response){
 		$scope.enlaces = response.data;
 	}
-}]);*/
+}]);
