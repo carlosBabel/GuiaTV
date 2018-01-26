@@ -22,4 +22,11 @@ var app = angular.module("enlace",['ngRoute'])
 }])
 
 .controller('InicioController',['$scope', function($scope){
-}]);
+
+}])
+
+.controller('XMLController', function($scope, $http){
+	$http.get('enlaces.json')then(function(response){
+		$scope.enlaces = response.data;
+	});
+});
