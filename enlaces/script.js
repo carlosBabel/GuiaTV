@@ -22,5 +22,4 @@ var app = angular.module("enlace",['ngRoute'])
 }])
 
 .controller('InicioController',['$scope', function($scope){
-	Console.log($scope.data);
 }]);
