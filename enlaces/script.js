@@ -12,7 +12,7 @@ var app = angular.module("enlace",['ngRoute'])
 		}).
 		when('/xml',{
 			templateUrl: 'xml.html',
-			controller:'InicioController'
+			controller:'XMLController'
 		}).
 		when('/cursos-online',{
 			templateUrl: 'cursos-online.html',
@@ -23,11 +23,11 @@ var app = angular.module("enlace",['ngRoute'])
 
 .controller('InicioController',['$scope', function($scope){
 
-}]);
-/*
+}])
+
 .controller('XMLController', function($scope, $http){
 	$http.get('enlaces.json')then(function(response){
 		$scope.enlaces = response.data;
 	});
 });
-*/
+
