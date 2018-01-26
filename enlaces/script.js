@@ -2,7 +2,7 @@ var app = angular.module("enlace",['ngRoute'])
 
 .config(['$routeProvider', function($routeProvider){
 	$routeProvider.
-		when('/',{
+		when('/inicio',{
 			templateUrl: 'inicio.html',
 			controller:'InicioController'
 		}).
@@ -18,7 +18,7 @@ var app = angular.module("enlace",['ngRoute'])
 			templateUrl: 'cursos-online.html',
 			controller:'CursosController'
 		}).
-		otherwise({redirectTo:'/'})
+		otherwise({redirectTo:'/inicio'})
 }])
 
 .controller('InicioController',['$scope', function($scope){
