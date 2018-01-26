@@ -30,5 +30,5 @@ var app = angular.module("enlace",['ngRoute'])
 		console.log($scope.data);
 		$scope.enlaces = response.data;
 	});
-});
+}]);
 
