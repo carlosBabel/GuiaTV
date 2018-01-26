@@ -1,4 +1,4 @@
-[
+[	
 	{
 		"id":1,
 		"nombre": "New Acton",
@@ -60,47 +60,5 @@
 		"tipo": "malus",
 		"url": "http://www.congreso.es",
 		"alumno": ""
-	},
-	{
-		"id":10,
-		"nombre": "Ejemplos de uso XML",
-		"tipo": "xml",
-		"url": "https://www.youtube.com/watch?v=-7HttBJnk9g",
-		"alumno": ""
-	},
-	{
-		"id":11,
-		"nombre": "Primer documento XML",
-		"tipo": "xml",
-		"url": "https://www.youtube.com/watch?v=LljEw3Std1Y",
-		"alumno": ""
-	},
-	{
-		"id":12,
-		"nombre": "Crear documento dtd",
-		"tipo": "xml",
-		"url": "https://www.youtube.com/watch?v=EfnWCeQNTQI",
-		"alumno": ""
-	},
-	{
-		"id":13,
-		"nombre": "Crear documento dtd",
-		"tipo": "xml",
-		"url": "https://www.youtube.com/watch?v=caAAcHNUL2s",
-		"alumno": ""
-	},
-	{
-		"id":14,
-		"nombre": "MVA MICROSOFT VIRTUAL ACADEMY",
-		"tipo": "curso",
-		"url": "https://mva.microsoft.com",
-		"alumno": "Laura"
-	},
-	{
-		"id":15,
-		"nombre": "Microsoft TechReward",
-		"tipo": "curso",
-		"url": "https://social.msdn.microsoft.com/Forums/windows/en-US/6207936d-1439-4c5c-8ce9-0910fd6b44da/microsoft-techreward?forum=whatforum",
-		"alumno": "Laura"
 	}
 ]

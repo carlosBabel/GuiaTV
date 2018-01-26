@@ -1,0 +1,31 @@
+[
+
+	{
+		"id":10,
+		"nombre": "Ejemplos de uso XML",
+		"tipo": "xml",
+		"url": "https://www.youtube.com/watch?v=-7HttBJnk9g",
+		"alumno": ""
+	},
+	{
+		"id":11,
+		"nombre": "Primer documento XML",
+		"tipo": "xml",
+		"url": "https://www.youtube.com/watch?v=LljEw3Std1Y",
+		"alumno": ""
+	},
+	{
+		"id":12,
+		"nombre": "Crear documento dtd",
+		"tipo": "xml",
+		"url": "https://www.youtube.com/watch?v=EfnWCeQNTQI",
+		"alumno": ""
+	},
+	{
+		"id":13,
+		"nombre": "Crear documento dtd",
+		"tipo": "xml",
+		"url": "https://www.youtube.com/watch?v=caAAcHNUL2s",
+		"alumno": ""
+	}
+]

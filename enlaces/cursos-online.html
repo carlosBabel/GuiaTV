@@ -1,0 +1,22 @@
+<div class="container">
+<!-- Columnas -->
+<div class="row">
+	
+	<div class="col-lg-12">
+		<h2>CURSOS ONLINE</h2>
+		<div ng-repeat="enlace in enlaces">
+			<div class="row video">
+				<div class="col-md-2">
+					<img src="https://pbs.twimg.com/profile_images/940256618108788736/uEhO7c_r_400x400.jpg">
+				</div>
+				<div class="col-md-10">
+					<h3>{{enlace.nombre}}</h3>
+					<p>Aporte de: {{enlace.alumno}}</p>
+					<a href="{{enlace.url}}" class="btn btn-primary">Ver Vídeo</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+</div>
+</div> <!-- /container -->
