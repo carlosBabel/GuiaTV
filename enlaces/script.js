@@ -22,23 +22,5 @@ var app = angular.module("enlace",['ngRoute'])
 }])
 
 .controller('InicioController',['$scope', function($scope){
-
-}])
-
-.controller('BonusController', function($scope, $http){
-	$http.get('enlaces.json')then(function(response){
-		$scope.enlaces = response.data;
-	});
-})
-
-.controller('XMLController', function($scope, $http){
-	$http.get('enlaces.json')then(function(response){
-		$scope.enlaces = response.data;
-	});
-})
-
-.controller('CursosController', function($scope, $http){
-	$http.get('enlaces.json')then(function(response){
-		$scope.enlaces = response.data;
-	});
-});
+	Console.log($scope.data);
+}]);
