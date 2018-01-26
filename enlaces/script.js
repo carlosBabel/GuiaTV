@@ -8,25 +8,26 @@ var app = angular.module("enlace",['ngRoute'])
 		}).
 		when('/bonus-malus',{
 			templateUrl: 'bonus-malus.html',
-			controller:'BonusController'
+			controller:'InicioController'
 		}).
 		when('/xml',{
 			templateUrl: 'xml.html',
-			controller:'XMLController'
+			controller:'InicioController'
 		}).
 		when('/cursos-online',{
 			templateUrl: 'cursos-online.html',
-			controller:'CursosController'
+			controller:'InicioController'
 		}).
 		otherwise({redirectTo:'/inicio'})
 }])
 
 .controller('InicioController',['$scope', function($scope){
 
-}])
-
+}]);
+/*
 .controller('XMLController', function($scope, $http){
 	$http.get('enlaces.json')then(function(response){
 		$scope.enlaces = response.data;
 	});
 });
+*/
