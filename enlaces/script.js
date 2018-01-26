@@ -24,6 +24,7 @@ var app = angular.module("enlace",['ngRoute'])
 .controller('InicioController',['$scope', function($scope){
 
 }]);
+/*
 .controller('BonusController',['$scope', '$http', function($scope, $http){
 	$http.get('enlaces.json')then(function(response){
 		$scope.enlaces = response.data;
@@ -40,4 +41,4 @@ var app = angular.module("enlace",['ngRoute'])
 	$http.get('enlaces.json')then(function(response){
 		$scope.enlaces = response.data;
 	}
-}]);
+}]);*/
