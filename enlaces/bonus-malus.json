@@ -4,61 +4,70 @@
 		"nombre": "New Acton",
 		"tipo": "bonus",
 		"url": "http://newacton.com.au",
-		"alumno": ""
+		"alumno": "",
+		"imagen": "imagenes/bonus.png"
 	},
 	{
 		"id":2,
 		"nombre": "My Corner Stone",
 		"tipo": "bonus",
 		"url": "http://mycornerstone.com.au",
-		"alumno": ""
+		"alumno": "",
+		"imagen": "imagenes/bonus.png"
 	},
 	{
 		"id":3,
 		"nombre": "B14",
 		"tipo": "bonus",
 		"url": "http://b14.dk",
-		"alumno": ""
+		"alumno": "",
+		"imagen": "imagenes/bonus.png"
 	},
 	{
 		"id":4,
 		"nombre": "Maverick Christians",
 		"tipo": "malus",
 		"url": "http://maverickchristians.com/2012/05/15/never-heard-gospel",
-		"alumno": ""
+		"alumno": "",
+		"imagen": "imagenes/malus.png"
 	},
 	{
 		"id":5,
 		"nombre": "Dokimos",
 		"tipo": "malus",
 		"url": "http://dokimos.org",
-		"alumno": ""
+		"alumno": "",
+		"imagen": "imagenes/malus.png"
 	},
 	{
 		"id":6,
 		"nombre": "Homer's WebPage",
 		"tipo": "malus",
 		"url": "http://www.homerswebpage.com",
-		"alumno": ""
+		"alumno": "",
+		"imagen": "imagenes/malus.png"
 	},
 	{
 		"id":7,
 		"nombre": "ArnGren",
 		"tipo": "malus",
 		"url": "http://arngren.net",
-		"alumno": ""
+		"alumno": "",
+		"imagen": "imagenes/malus.png"
 	},{
 		"id":8,
 		"nombre": "Worlds Worst Webs",
 		"tipo": "malus",
 		"url": "http://www.theworldsworstwebsiteever.com",
-		"alumno": ""
+		"alumno": "",
+		"imagen": "imagenes/malus.png"
 	},
 	{
 		"id":9,
 		"nombre": "Congreso Diputados",
 		"tipo": "malus",
 		"url": "http://www.congreso.es",
-		"alumno": ""
+		"alumno": "",
+		"imagen": "imagenes/malus.png"
 	}
 ]
